@@ -24,42 +24,4 @@ int main( int argc, char* argv[] ) {
     return 1;
   }
 
-  /* UNCOMMENT COMMENTED CODE BELOW AS YOU IMPLEMENT */
-
-  // ImagePPM image;
-  // infile >> image;
-  // infile.close();
-
-  // SeamCarver carver( image );
-  // for ( int i = 2; i < argc - 2; i += 2 ) {
-  //   std::string times_string = argv[i + 1];
-  //   int times = 0;
-  //   try {
-  //     times = std::stoi( times_string );
-  //   } catch ( const std::exception& e ) {
-  //     std::cout << "Malformed option" << std::endl;
-  //     PrintUsage( argv[0] );
-  //     return 1;
-  //   }
-
-  //   std::string option = argv[i];
-  //   if ( option == "-h" ) {
-  //     for ( int t = 0; t < times; t++ ) {
-  //       carver.RemoveHorizontalSeam();
-  //     }
-  //   } else if ( option == "-v" ) {
-  //     for ( int t = 0; t < times; t++ ) {
-  //       carver.RemoveVerticalSeam();
-  //     }
-  //   } else {
-  //     std::cout << argv[i] << " not an option" << std::endl;
-  //     PrintUsage( argv[0] );
-  //     return 1;
-  //   }
-  // }
-
-  // std::ofstream outfile( argv[argc - 1] );
-  // outfile << carver.GetImage();
-  // outfile.close();
-
 }

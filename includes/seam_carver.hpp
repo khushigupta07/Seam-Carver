@@ -16,11 +16,11 @@ public:
   // sets the instances' image_ as a DEEP COPY of the image parameter. Note
   // that if ImagePPM's copy constructor is implemented correctly, you
   // shouldn't have to worry about the details of a deep copy here
-  SeamCarver( const ImagePPM& image );
+  SeamCarver(const ImagePPM& image);
 
   // sets the instances' image_ as a DEEP COPY of the image parameter. Same
   // note as above regarding ImagePPM
-  void SetImage( const ImagePPM& image );
+  void SetImage(const ImagePPM& image);
 
   // returns the instance's image_
   const ImagePPM& GetImage() const;
@@ -32,7 +32,7 @@ public:
   int GetWidth() const;
 
   // returns the energy of the pixel at row col in image_
-  int GetEnergy( int row, int col ) const;
+  int GetEnergy(int row, int col) const;
 
   // returns the horizontal seam of image_ with the least amount of
   // energy
